@@ -1,0 +1,30 @@
+# --- Python ---
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+# --- OS / Editor ---
+.DS_Store
+.idea/
+.vscode/
+.claude/
+
+# --- 원시 시장 데이터 (벤더 라이선스 — 레포에 커밋 금지) ---
+data/*.csv
+data/*.parquet
+data/*.xlsx
+!data/README.md
+
+# 선물 결제가 원본 / 포지션 스냅샷
+cl_settlements*.csv
+wti_positions*.csv
+*_positions.csv
+13*Treasury*.csv
+
+# --- 대용량 산출물 ---
+*.pptx
+*.xlsx

@@ -1,0 +1,6 @@
+pandas
+numpy
+matplotlib
+seaborn
+python-dateutil
+pandas-market-calendars
