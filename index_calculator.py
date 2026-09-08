@@ -3,6 +3,9 @@ Bloomberg WTI Crude Oil Single Excess Return (ER) / Total Return (TR) Index Repl
 Bloomberg Single Commodity Index Methodology — Production Implementation
 
 Base Date : 2010-01-04  |  Base Level : 100.0 (both ER and TR)
+    (Bloomberg 방법론상의 공식 Base Date. 본 프로젝트의 실제 백테스트·성과 분석은
+     보유 선물 데이터 구간에 맞춰 2016-01-04 = 100.0 으로 리베이스한 값을 사용합니다.
+     README §2-5 및 아래 __main__ 블록의 BASE_ER / BASE_TR 주석 참조.)
 Commodity : WTI Crude Oil  |  Bloomberg Code : CL  |  Exchange : CME/NYMEX
 """
 
