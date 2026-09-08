@@ -3,9 +3,12 @@ Bloomberg WTI Crude Oil Single Excess Return (ER) / Total Return (TR) Index Repl
 Bloomberg Single Commodity Index Methodology — Production Implementation
 
 Base Date : 2010-01-04  |  Base Level : 100.0 (both ER and TR)
-    (Bloomberg 방법론상의 공식 Base Date. 본 프로젝트의 실제 백테스트·성과 분석은
-     보유 선물 데이터 구간에 맞춰 2016-01-04 = 100.0 으로 리베이스한 값을 사용합니다.
-     README §2-5 및 아래 __main__ 블록의 BASE_ER / BASE_TR 주석 참조.)
+    (Bloomberg 방법론상의 공식 Base Date. 이 모듈(정적 롤오버 공통 베이스)의
+     __main__ 실행 예시는 보유 선물 데이터 구간에 맞춰 START_DATE = 2016-01-02
+     부터 계산해 100.0으로 리베이스합니다 — 아래 __main__ 블록의 START_DATE /
+     BASE_ER / BASE_TR 주석 참조. 실제로 README에 보고된 GSCI DRA 성과는
+     `reference/ws_1_index.py`의 __main__(START_DATE = 2016-01-04)으로 산출된
+     것이며, README §2-5의 "Base 2016-01-04"는 그 값을 가리킵니다.)
 Commodity : WTI Crude Oil  |  Bloomberg Code : CL  |  Exchange : CME/NYMEX
 """
 
